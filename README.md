@@ -39,10 +39,10 @@ by default, generamba will generate view class with a parent of UIViewController
 ```
 
 view_type:
-[*] * 'view' - UIViewController has parrent for View class
-[ ] * 'table' - UITableViewController has parrent for View class
-[ ] * 'tabbar' - UITabBarController has parrent for View class
-[ ] * 'nav' - UINavigationController has parrent for View class
+- [x] 'view' - UIViewController has parrent for View class
+- [ ] 'table' - UITableViewController has parrent for View class
+- [ ] 'tabbar' - UITabBarController has parrent for View class
+- [ ] 'nav' - UINavigationController has parrent for View class
 
 
 The detailed information about a template structure is available in [Generamba Wiki](https://github.com/rambler-digital-solutions/Generamba/wiki/Template-Structure).

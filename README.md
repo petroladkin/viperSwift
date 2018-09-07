@@ -1,12 +1,14 @@
 # viperSwift
 
-![Swift](https://img.shields.io/badge/Swift-3.0-green.svg)
+![Swift](https://img.shields.io/badge/Swift-4.1-brightgreen.svg)
 
-Generamba template with use DI Swinject and LightRoute:
+Generamba template with use Swinject and SwinjectStoryboard for DI, LightRoute for routing, Quick and Nimble for testing:
 
-* [LightRoute](https://github.com/SpectralDragon/LightRoute) (Helpers for creation proper module connections and routing)
 * [Swinject](https://github.com/Swinject/Swinject) (Dependency injection framework for Swift)
 * [SwinjectStoryboard](https://github.com/Swinject/SwinjectStoryboard) (Swinject extension for automatic dependency injection via Storyboard)
+* [LightRoute](https://github.com/SpectralDragon/LightRoute) (Helpers for creation proper module connections and routing)
+* [Quick](https://github.com/Quick/Quick) (The Swift (and Objective-C) testing framework)
+* [Nimble](https://github.com/Quick/Nimble) (A Matcher Framework for Swift and Objective-C)
 
 It's a shared template for [Generamba](https://github.com/rambler-digital-solutions/Generamba) code generator.
 
@@ -39,10 +41,10 @@ by default, generamba will generate view class with a parent of UIViewController
 ```
 
 view_type:
-- [x] 'view' - UIViewController has parrent for View class
-- [ ] 'table' - UITableViewController has parrent for View class
-- [ ] 'tabbar' - UITabBarController has parrent for View class
-- [ ] 'nav' - UINavigationController has parrent for View class
+- [x] 'view' - view class has parent UIViewController class
+- [ ] 'table' - view class has parent UITableViewController class
+- [ ] 'tabbar' - view class has parent UITabBarController class
+- [ ] 'nav' - view class has parent UINavigationController class
 
 
 The detailed information about a template structure is available in [Generamba Wiki](https://github.com/rambler-digital-solutions/Generamba/wiki/Template-Structure).

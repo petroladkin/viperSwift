@@ -10,4 +10,39 @@ Generamba template with use DI Swinject and LightRoute:
 
 It's a shared template for [Generamba](https://github.com/rambler-digital-solutions/Generamba) code generator.
 
+
+## Configure
+
+add template to Rambafile:
+```
+...
+- {name: viperSwift, git: 'https://github.com/petroladkin/viperSwift'}
+...
+```
+
+run in root project folder:
+```
+> generamba template install
+```
+
+
+## Usage
+
+Run command to create a new module
+```
+> generamba gen <module_name> viperSwift
+```
+
+by default, generamba will generate view class with a parent of UIViewController, but to customize you can add a view_type parameter.
+```
+> generamba gen <module_name> viperSwift [--custom_parameters view_type:<view_type>]
+```
+
+view_type:
+[*] * 'view' - UIViewController has parrent for View class
+[ ] * 'table' - UITableViewController has parrent for View class
+[ ] * 'tabbar' - UITabBarController has parrent for View class
+[ ] * 'nav' - UINavigationController has parrent for View class
+
+
 The detailed information about a template structure is available in [Generamba Wiki](https://github.com/rambler-digital-solutions/Generamba/wiki/Template-Structure).
